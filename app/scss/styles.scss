@@ -1,10 +1,15 @@
-$black: #000;
+$black: #212121;
 $white: #fff;
+$grey: #F5F5F5;
+$grey-500: #9E9E9E;
+
+$light-green-700: #689F38;
 
 /* Navigation */
 .navigation{
-	background: $black;
+	background: $grey;
 	overflow: hidden;
+	margin-left: 250px;
 }
 
 .navigation ul li{
@@ -12,13 +17,28 @@ $white: #fff;
 	background: transparent;
 
 	&:hover{
-		background: red;
+		background: transparent;
 		transition: .2s;
 		cursor: pointer;
 	}
 
 	a{
 		text-decoration: none;
-		color: $white;
+		color: $black;
+
+		&:hover{
+			color: $grey-500;
+			transition: .1s;
+		}
 	}
+}
+
+/* Left Off Canvas */
+.left-offcanvas{
+	background: $light-green-700;
+	position: fixed;
+	display: absolute;
+	top: 0;
+	height: 100%;
+	width: 250px;
 }
